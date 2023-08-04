@@ -28,3 +28,4 @@ $tuData = curl_exec($tuCurl);
 curl_close($tuCurl);
 
 echo $tuData;
+added data
