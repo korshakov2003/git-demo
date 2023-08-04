@@ -1,13 +1,8 @@
 <?php
 
-$sandboxPubKey = '67bw5g6vkh39vh4v';
-$sandboxPrivateKey = '778e867669b1f19f2bd5b45cbafdabbc';
+
 $merchant = 'g2hpqwc9ygry3knz';
 $transactionId = '1aa6avp8';
-
-$auth = base64_encode("$sandboxPubKey:$sandboxPrivateKey");
-
-$url = "https://api.sandbox.braintreegateway.com:443/merchants/$merchant/transactions/$transactionId/settle";
 
 $tuCurl = curl_init();
 curl_setopt($tuCurl, CURLOPT_URL, $url);
